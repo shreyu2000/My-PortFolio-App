@@ -16,19 +16,19 @@ const About = () => {
         <div className="max-w-[1000px] w-full  grid sm:grid-cols-2 gap-8 px-4 ">
           <div className="sm:text-right text-4xl font-bold">
             <p>
-              Hi , I'm Shreya Dake , nice to meet you. Please take a look
+              Hi , I'm Shreya Dake. Nice to meet you. Please take a look
               around.
             </p>
           </div>
 
           <div>
+            <i className="py-5"> You striked on my About Me page so let me tell you my story.</i><br/><br/>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Expedita, aspernatur iste eligendi dolorem neque asperiores magni
-              aliquam minus ea? Beatae distinctio blanditiis amet magnam
-              similique reprehenderit accusantium voluptatem rerum officia?
-              Neque voluptatum blanditiis fuga exercitationem numquam assumenda
-              ipsam, tenetur vel sunt quis perspiciatis error, optio.
+              Born on 1st of April 2000 . Born and brought up in Maharashtra .
+              I completed my BTECH in Information Technology  in 2021 from Walchand College of Engineering ,Sangli .<br/>
+              I have dedicated two years for Government exam Preparation which has developed in me the valuable skills of critical analysis ,problem solving ,discipline ,patience ,persevernce.
+              Meanwhile I kept my passion for technology.<br/>
+              I'm also proficient in Front end, back end and coding has become my major hobby .....
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect ,useState } from "react";
 import { Link } from "react-scroll";
 
 // import logo from '../assets/logo1.png'
@@ -14,14 +14,33 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
   const handleClick = () => {
     setNav(!nav);
   };
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div className="text-pink-400 font-bold" style={{ width: "50px" }}>
-        <p style={{ fontSize: "30px" }}>SHREYU</p>
+    <div className=
+    {`${ scrolling ? 'bg-pink-700' : 'bg-[#0a192f]'}  fixed w-full h-[80px] flex justify-between items-center px-4  text-gray-300 transition-all duration-300`}>
+
+      <div className=" text-pink-300 ml-10 font-bold" style={{ width: "50px" }}>
+        <p style={{ fontSize: "30px" }} > SD</p>
         {/* <img src={logo} style={{ width:'200px'}}/> */}
       </div>
       {/* menu */}
